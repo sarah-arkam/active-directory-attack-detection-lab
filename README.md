@@ -15,6 +15,34 @@ The lab currently consists of a Windows Server Domain Controller and a domain-jo
 - Develop detection workflows for common attack techniques
 - Document findings and mitigation recommendations
 
+
+## Project Status
+
+🚧 **In Progress**
+
+**Current Phase:** Active Directory Administration & Identity Management
+
+### Completed
+
+- Built a Windows Server 2022 Domain Controller
+- Installed Active Directory Domain Services (AD DS)
+- Created and deployed the `arkam.local` domain
+- Created Organizational Units (Employees, IT)
+- Created and managed domain user accounts
+- Joined a Windows 11 workstation to the domain
+- Created security groups and configured role-based access control (RBAC)
+- Created and linked a Group Policy Object (GPO)
+- Authenticated to a domain-joined workstation using an Active Directory account
+
+### Next Steps
+
+- Install Sysmon on domain assets
+- Integrate Wazuh SIEM
+- Monitor authentication and account management events
+- Simulate attack scenarios
+- Develop detection use cases
+- Create security monitoring dashboards
+  
 ## Screenshots
 
 ### 01 - AD DS Installed
