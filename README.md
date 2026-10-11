@@ -157,4 +157,4 @@ Successfully integrated Windows endpoints with the Wazuh SIEM platform. Both the
 
 Successfully enrolled the Windows 11 workstation (WS01) into Wazuh SIEM and verified active endpoint monitoring. Wazuh is collecting security telemetry, mapping events to MITRE ATT&CK techniques, performing security configuration assessments, and monitoring endpoint activity for threat detection.
 
-<img width="1917" height="917" alt="13" src="https://github.com/user-attachments/assets/54c25863-de82-4350-b4b6-adc3e1ea5eac" />
+<img width="1896" height="870" alt="13" src="https://github.com/user-attachments/assets/b181318c-4ef0-465f-8e82-37549a76d113" />
