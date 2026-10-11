@@ -1,10 +1,29 @@
 # Active Directory Attack & Detection Lab
 
+## Table of Contents
+- [Overview](#overview)
+- [Goals](#goals)
+- [Project Status](#project-status)
+- [Screenshots](#screenshots)
+  - [01 - AD DS Installed](#01---ad-ds-installed)
+  - [02 - Active Directory Domain Structure](#02---active-directory-domain-structure)
+  - [03 - Users and Organizational Units](#03---users-and-organizational-units)
+  - [04 - Domain-Joined Windows Workstation](#04---domain-joined-windows-workstation)
+  - [05 - Domain-Joined Workstation Verification](#05---domain-joined-workstation-verification)
+  - [06 - Security Group Membership](#06---security-group-membership)
+  - [07 - Group Policy Management](#07---group-policy-management)
+  - [08 - Domain User Authentication](#08---domain-user-authentication)
+  - [09 - Sysmon Deployment on Windows 11 Workstation](#09---sysmon-deployment-on-windows-11-workstation)
+  - [10 - Live Sysmon Telemetry Verification](#10---live-sysmon-telemetry-verification)
+  - [11 - Sysmon Service Verification](#11---sysmon-service-verification)
+  - [12 - Wazuh Agent Enrollment Status](#12---wazuh-agent-enrollment-status)
+  - [13 - Wazuh Endpoint Monitoring Dashboard](#13---wazuh-endpoint-monitoring-dashboard)
+
 ## Overview
 
 This project demonstrates the design and deployment of a small Active Directory environment for learning Windows administration, authentication security, threat detection, and security monitoring.
 
-The lab currently consists of a Windows Server Domain Controller and a domain-joined Windows 11 workstation. Future phases will integrate Sysmon and Wazuh SIEM to support security monitoring, threat detection, and attack simulation.
+The lab currently consists of a Windows Server Domain Controller and a domain-joined Windows 11 workstation. The lab now integrates Sysmon and Wazuh SIEM to provide centralized security monitoring, endpoint telemetry collection, and detection engineering capabilities.
 
 ## Goals
 
@@ -20,7 +39,7 @@ The lab currently consists of a Windows Server Domain Controller and a domain-jo
 
 🚧 **In Progress**
 
-**Current Phase:** Active Directory Administration & Identity Management
+**Current Phase:** Telemetry Collection & Security Monitoring
 
 ### Completed
 
@@ -33,20 +52,24 @@ The lab currently consists of a Windows Server Domain Controller and a domain-jo
 - Created security groups and configured role-based access control (RBAC)
 - Created and linked a Group Policy Object (GPO)
 - Authenticated to a domain-joined workstation using an Active Directory account
+- Installed Sysmon on WS01
+- Integrated Wazuh SIEM
+- Enrolled DC01 and WS01 in Wazuh
+- Verified endpoint telemetry collection
 
 ### Next Steps
 
-- Install Sysmon on domain assets
-- Integrate Wazuh SIEM
+- Validate Sysmon telemetry ingestion within Wazuh
 - Monitor authentication and account management events
-- Simulate attack scenarios
-- Develop detection use cases
-- Create security monitoring dashboards
+- Create custom detection rules in Wazuh
+- Simulate Active Directory attack scenarios
+- Map detections to MITRE ATT&CK techniques
+- Develop security monitoring dashboards
+- Document investigation and incident response workflows
   
 ## Screenshots
 
 ### 01 - AD DS Installed
-
 
 Installed Active Directory Domain Services (AD DS) on Windows Server 2022 in preparation for domain controller promotion.
 
@@ -57,7 +80,6 @@ Installed Active Directory Domain Services (AD DS) on Windows Server 2022 in pre
 ### 02 - Active Directory Domain Structure
 
 Verified the successful creation of the `arkam.local` Active Directory domain and reviewed the default organizational structure, including built-in containers for users, computers, domain controllers, and security principals.
-Show more lines
 
 <img width="205" height="130" alt="02-active-directory-domain-structure" src="https://github.com/user-attachments/assets/7b32658c-7927-4fcd-9922-5ff2554962f5" />
 ---
