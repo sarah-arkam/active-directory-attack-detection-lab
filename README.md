@@ -106,3 +106,33 @@ Group Policy allows administrators to enforce security and configuration setting
 Successfully authenticated to a domain-joined Windows 11 workstation using the Active Directory account `Sarah.Arkam`. This demonstrates centralized authentication and identity management within the `arkam.local` environment.
 
 <img width="350" height="137" alt="08-domain-user-authentication" src="https://github.com/user-attachments/assets/0f082f74-77a3-461a-bd6f-9298fb856214" />
+
+### 09 - Sysmon Deployment on Windows 11 Workstation
+
+Successfully deployed Sysmon on a domain-joined Windows 11 workstation using a tuned monitoring configuration. Sysmon provides detailed endpoint telemetry including process creation, network connections, and security-relevant system activity used for detection engineering and threat hunting.
+
+<img width="922" height="307" alt="09" src="https://github.com/user-attachments/assets/b19d7e9e-7cad-4133-940d-86d4382c071b" />
+
+### 10 - Live Sysmon Telemetry Verification
+
+Verified successful Sysmon deployment by reviewing live endpoint telemetry through the Microsoft-Windows-Sysmon Operational log. Sysmon captured process creation (Event ID 1) and file creation (Event ID 11) activity, providing enriched telemetry for future threat detection and Wazuh SIEM integration.
+
+<img width="982" height="282" alt="10" src="https://github.com/user-attachments/assets/20a0021c-0fc9-4edb-9637-afe45cc2273a" />
+
+### 11 - Sysmon Service Verification
+
+Verified successful Sysmon deployment on a domain-joined Windows 11 workstation. The Sysmon64 service is running and collecting endpoint telemetry that will be forwarded to Wazuh for centralized security monitoring and threat detection.
+
+<img width="642" height="102" alt="11" src="https://github.com/user-attachments/assets/478fc59c-6a58-4013-80eb-fbd9e8557026" />
+
+### 12 - Wazuh Agent Enrollment Status
+
+Successfully integrated Windows endpoints with the Wazuh SIEM platform. Both the Windows Server 2022 Domain Controller (DC01) and Windows 11 workstation (WS01) are actively enrolled and forwarding security telemetry for centralized monitoring and threat detection.
+
+<img width="947" height="312" alt="12" src="https://github.com/user-attachments/assets/e3a1839f-7386-4eb1-ac2e-3943842750e6" />
+
+### 13 - Wazuh Endpoint Monitoring Dashboard
+
+Successfully enrolled the Windows 11 workstation (WS01) into Wazuh SIEM and verified active endpoint monitoring. Wazuh is collecting security telemetry, mapping events to MITRE ATT&CK techniques, performing security configuration assessments, and monitoring endpoint activity for threat detection.
+
+<img width="1917" height="917" alt="13" src="https://github.com/user-attachments/assets/54c25863-de82-4350-b4b6-adc3e1ea5eac" />
